@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<style>
+    #flex {
+        height: 50px;
+    }
+</style>
+
+<body>
+    <div class="d-lg-none">hide on lg and wider screens</div>
+    <div class="d-none d-lg-block">hide on screens smaller than lg</div>
+    <div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
+    <div class="d-inline-flex p-2 bd-highlight">I'm an inline flexbox container!</div>
+    <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex flex-row-reverse bd-highlight">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex flex-column bd-highlight mb-3">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex flex-column-reverse bd-highlight">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+
+    <!-- justify content -->
+    <div class="d-flex justify-content-start mt-lg-2">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-end mt-lg-2">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-center mt-lg-2">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-between mt-lg-2">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-around mt-lg-2">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-evenly mt-lg-2">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+
+    <!-- align-items -->
+    <div class="d-flex align-items-start bg-danger mt-lg-2" id="flex">
+        <div class="bd-highlight">Flex item 1</div>
+        <div class="bd-highlight">Flex item 2</div>
+        <div class="bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex align-items-end bg-info mt-lg-2" id="flex">
+        <div class="bd-highlight">Flex item 1</div>
+        <div class="bd-highlight">Flex item 2</div>
+        <div class="bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex align-items-center bg-primary mt-lg-2" id="flex">
+        <div class="bd-highlight">Flex item 1</div>
+        <div class="bd-highlight">Flex item 2</div>
+        <div class="bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex align-items-baseline bg-secondary mt-lg-2" id="flex">
+        <div class="bd-highlight">Flex item 1</div>
+        <div class="bd-highlight">Flex item 2</div>
+        <div class="bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex align-items-stretch bg-success mt-lg-2" id="flex">
+        <div class=" bg-danger bd-highlight">Flex item 1</div>
+        <div class="bg-danger mx-lg-2 bd-highlight">Flex item 2</div>
+        <div class="bg-danger mx-lg-2 bd-highlight">Flex item 3</div>
+    </div>
+
+    <!-- align-self -->
+    <div class="d-flex align-items-stretch bg-success mt-lg-2" id="flex">
+        <div class=" bg-danger bd-highlight">Flex item 1</div>
+        <div class="align-self-start bg-primary ms-lg-3">Aligned flex item</div>
+        <div class="bg-danger ms-lg-3 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex align-items-stretch bg-success mt-lg-2" id="flex">
+        <div class=" bg-danger bd-highlight">Flex item 1</div>
+        <div class="align-self-end bg-primary ms-lg-3">Aligned flex item</div>
+        <div class="bg-danger ms-lg-3 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex align-items-stretch bg-success mt-lg-2" id="flex">
+        <div class=" bg-danger bd-highlight">Flex item 1</div>
+        <div class="align-self-center bg-primary ms-lg-3">Aligned flex item</div>
+        <div class="bg-danger ms-lg-3 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex align-items-stretch bg-success mt-lg-2" id="flex">
+        <div class=" bg-danger bd-highlight">Flex item 1</div>
+        <div class="align-self-baseline bg-primary ms-lg-3">Aligned flex item</div>
+        <div class="bg-danger ms-lg-3 bd-highlight">Flex item 3</div>
+    </div>
+    <div class="d-flex align-items-stretch bg-success mt-lg-2" id="flex">
+        <div class=" bg-danger bd-highlight">Flex item 1</div>
+        <div class="align-self-stretch bg-primary ms-lg-3">Aligned flex item</div>
+        <div class="bg-danger ms-lg-3 bd-highlight">Flex item 3</div>
+    </div>
+
+    <!-- flex-fill,grow,shrink -->
+    <div class="d-flex bd-highlight">
+        <div class="p-2 bg-primary flex-fill bd-highlight">Flex item with a lot of
+            contentmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</div>
+        <div class="p-2 flex-fill bd-highlight">Flex item</div>
+        <div class="p-2 flex-fill bd-highlight">Flex item</div>
+    </div>
+    <div class="d-flex bd-highlight">
+        <div class="p-2 flex-grow-1 bg-secondary bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Third flex item</div>
+    </div>
+    <div class="d-flex bd-highlight">
+        <div class="p-2 w-100 bd-highlight">Flex item</div>
+        <div class="p-2 flex-shrink-1 bd-highlight">Flex item</div>
+    </div>
+    <div class="d-flex align-items-start flex-column bd-highlight mb-3" style="height: 200px;">
+        <div class="mb-auto p-2 bd-highlight bg-success">Flex item</div>
+        <div class="p-2 bd-highlight bg-success">Flex item</div>
+        <div class="p-2 bd-highlight bg-success">Flex item</div>
+    </div>
+
+    <div class="d-flex align-items-end flex-column bd-highlight mb-3" style="height: 200px;">
+        <div class="p-2 bd-highlight bg-success">Flex item</div>
+        <div class="p-2 bd-highlight bg-success">Flex item</div>
+        <div class="mt-auto p-2 bd-highligh bg-success">Flex item</div>
+    </div>
+    <div class="d-flex flex-nowrap bd-highlight">
+        <div class="order-3 p-2 bd-highlight">First flex item</div>
+        <div class="order-2 p-2 bd-highlight">Second flex item</div>
+        <div class="order-1 p-2 bd-highlight">Third flex item</div>
+    </div>
+
+    <!-- align-content -->
+    <div class="d-flex align-content-start flex-wrap">
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+        <div style="width: 100px;">item 1</div>
+
+    </div>
+    <!-- similarly align-content-start,end,center,between,around -->
+
+    <!-- float -->
+     <div class="float-start">Float start on all viewport sizes</div><br>
+<div class="float-end">Float end on all viewport sizes</div><br>
+<div class="float-none">Don't float on all viewport sizes</div>
+<div class="float-sm-start">Float start on viewports sized SM (small) or wider</div><br>
+<div class="float-md-start">Float start on viewports sized MD (medium) or wider</div><br>
+<div class="float-lg-start">Float start on viewports sized LG (large) or wider</div><br>
+<div class="float-xl-start">Float start on viewports sized XL (extra-large) or wider</div><br>
+
+<!-- interactions -->
+ <div>
+    <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+<p class="user-select-auto">This paragraph has default select behavior.</p>
+<p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+ </div>
+
+ <!-- pointer-events -->
+  <div>
+    <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
+<p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
+<p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code>
+     property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.
+    </p>
+  </div>
+
+  <!-- overflow -->
+   <div class="overflow-auto bg-success" style="width: 100px;" id="flex">vjhvd,jdckbskjMb,jgDSKUHKjnKBMB.KhskBDDCB MDCJ,KUkjBMDS</div>
+<div class="overflow-hidden bg-success" style="width: 100px;" id="flex">bkjbkbckiubkjbK X.kjbkskkkkkkkkkkkkkkkkkkkkkjbKBSksdckl</div>
+<div class="overflow-visible bg-primary" style="width: 100px;" id="flex">jbkjbdkbckubakjbjbckjBKUBkbjabckhihiNk.edbkdddndkuiudchnakhci</div>
+<div class="overflow-scroll bg-primary" style="width: 100px;" id="flex">jjjjjjjjjjjjdddddddwujbdkbksdughiuhiwkBKJVJCHIH;OIOIHDKJCBK.IASI</div>
+
+<!-- position -->
+ <div class="position-relative mt-3 bg-info" style="height: 200px;">
+  <div class="position-absolute top-0 start-0 bg-secondary" style="width: 50px;" id="flex"></div>
+  <div class="position-absolute top-0 end-0 bg-secondary" style="width: 50px;" id="flex"></div>
+  <div class="position-absolute top-50 start-50 bg-secondary" style="width: 50px;" id="flex"></div>
+  <div class="position-absolute bottom-50 end-50 bg-secondary" style="width: 50px;" id="flex"></div>
+  <div class="position-absolute bottom-0 start-0 bg-secondary" style="width: 50px;" id="flex"></div>
+  <div class="position-absolute bottom-0 end-0 bg-secondary" style="width: 50px;" id="flex"></div>
+</div>
+
+<!-- shadow -->
+ <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+<div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+<div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+<div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+
+<!-- sizing:Use w for width -->
+ <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+  <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+  <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+  <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+  <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+  <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+</div>
+
+<!-- text -->
+<div>
+    <p class="text-start">Start aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-end">End aligned text on all viewport sizes.</p>
+
+<p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+<div class="badge bg-primary text-wrap" style="width: 6rem;">
+  This text should wrap.
+</div>
+<div class="text-nowrap bd-highlight" style="width: 8rem;">
+  This text should overflow the parent.
+</div>
+</div>
+
+<!-- text-transform -->
+ <p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">CapiTaliZed text.</p>
+
+<!-- Font-size -->
+ <p class="fs-1">.fs-1 text</p>
+<p class="fs-2">.fs-2 text</p>
+<p class="fs-3">.fs-3 text</p>
+<p class="fs-4">.fs-4 text</p>
+<p class="fs-5">.fs-5 text</p>
+<p class="fs-6">.fs-6 text</p>
+
+<!-- Font-weight & Italics -->
+ <p class="fw-bold">Bold text.</p>
+<p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+<p class="fw-normal">Normal weight text.</p>
+<p class="fw-light">Light weight text.</p>
+<p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+<p class="fst-italic">Italic text.</p>
+<p class="fst-normal">Text with normal font style</p>
+
+<!-- Line-height -->
+ <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+
+<!-- Monospace -->
+ <p class="font-monospace">This is in monospace</p>
+
+ <!-- reset-color -->
+  <p class="text-muted">
+  Muted text with a <a href="#" class="text-reset">reset link</a>.
+</p>
+
+<!-- text-decoration -->
+ <p class="text-decoration-underline">This text has a line underneath it.</p>
+<p class="text-decoration-line-through">This text has a line going through it.</p>
+<a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+
+<!-- visiblity -->
+ <div class="visible">ehdkkcsihcklNLdIl</div>
+<div class="invisible">bsdkjcbkshohkj</div>
+</body>
+</html>
