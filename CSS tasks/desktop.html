@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screens</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .one {
+            height: 120px;
+            width: 100%;
+            background-color: aqua;
+            color: aqua;
+        }
+
+        .two {
+            height: inherit;
+            width: 450px;
+            background-color: brown;
+        }
+
+        .three {
+            height: inherit;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .class {
+            height: 550px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .three1 {
+            height: 110px;
+            width: 90%;
+            background-color: grey;
+            margin: 20px;
+            margin-top: 0px;
+        }
+
+        .four {
+            height: inherit;
+            width: 20%;
+            background-color: rgb(15, 239, 71);
+        }
+
+        .two1 {
+            height: 20px;
+            width: 95%;
+            background-color: white;
+            margin: 10px;
+        }
+
+        @media screen and (max-width:319px) {
+            * {
+                /* height: 500px;
+                width: 100%; */
+                background-color: black;
+            }
+            .three,.three1,.two1,.one,.four,.two{
+                display: none;
+            }
+
+
+
+        }
+
+
+        @media (min-width:320px) and (max-width:480px) {
+            .two {
+                height: 300px;
+                width: 100%;
+                background-color: brown;
+                margin-bottom: 10px;
+            }
+
+            .three {
+                height: inherit;
+                width: 50%;
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .class {
+                height: 550px;
+                display: flex;
+                width: 100%;
+                margin-top: 10px;
+                flex-direction: column;
+                /* background-color: antiquewhite; */
+            }
+
+            .three1 {
+                height: 60px;
+                width: 100%;
+                background-color: grey;
+                margin: 10px;
+                margin-top: 0px;
+            }
+
+            .four {
+                height: 120px;
+                width: 100%;
+                background-color: rgb(15, 239, 71);
+            }
+
+            .two1 {
+                height: 20px;
+                width: 95%;
+                background-color: white;
+                margin: 10px;
+            }
+        }
+
+        @media (min-width:481px) and (max-width:768px) {
+            .two {
+                height: 50px;
+                width: 100%;
+                background-color: brown;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .two1 {
+                height: 30px;
+                width: 23%;
+                background-color: white;
+                margin: 4px;
+                margin-top: 7px;
+            }
+
+            .class {
+                height: 550px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                /* background-color: antiquewhite; */
+            }
+
+            .four {
+                height: 100px;
+                width: 100%;
+                background-color: rgb(15, 239, 71);
+            }
+
+            .three1 {
+                height: 65px;
+                width: 100%;
+                background-color: grey;
+                margin: 10px;
+            }
+
+            .three {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">Too small screen</div>
+    <div class="class">
+        <div class="two">
+            <div class="two1"></div>
+            <div class="two1"></div>
+            <div class="two1"></div>
+            <div class="two1"></div>
+        </div>
+        <div class="three">
+            <div class="three1"></div>
+            <div class="three1"></div>
+            <div class="three1"></div>
+            <div class="three1"></div>
+            <div class="three1"></div>
+        </div>
+        <div class="four"></div>
+    </div>
+
+
+</body>
+
+</html>

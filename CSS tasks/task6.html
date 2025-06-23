@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+    <style>
+        .one{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: rgb(118, 186, 173);
+            animation: one 5s infinite alternate;
+            position: relative;
+            box-shadow: 10px 10px 30px black;
+        }
+        @keyframes one{
+            0%{
+                left: 0;
+                top: 0;
+            }
+           25%{
+                left: 50%;
+                top: 150px;
+            }
+            50%{
+                left: 0;
+                top: 280px;
+            }
+            75%{
+                left: 80%;
+                top: 420px;
+            }
+            100%{
+                left: 0;
+                top: 550px;
+            }
+        }
+        .two{
+            height: 200px;
+            width: 200px;
+            background-image: url(https://i.pinimg.com/originals/99/88/a0/9988a04a01e50ea07c19fe1d97c23838.jpg);
+            margin: 200px;
+            margin-left: 700px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 50%;
+            position: relative;
+        }
+        .two:hover{
+            animation: two 2s infinite;
+        }
+        @keyframes two{
+            from{
+                rotate: 0deg;
+            }
+            to{
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

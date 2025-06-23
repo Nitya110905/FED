@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .two {
+            height: 30px;
+            background-color: darkblue;
+            margin: 5px;
+            margin-bottom: 0px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+        }
+
+        .three {
+            height: inherit;
+            width: 400px;
+            color: white;
+            text-align: end;
+        }
+
+        .four {
+            height: inherit;
+            width: 600px;
+            color: white;
+            text-align: center;
+        }
+
+        .five {
+            height: inherit;
+            width: 80px;
+            background-color: darkgoldenrod;
+            color: white;
+        }
+
+        .six {
+            height: 40px;
+            width: inherit;
+            background-color: white;
+            display: flex;
+            margin: 5px;
+        }
+
+        .seven {
+            height: inherit;
+            width: 500px;
+            text-align: end;
+            height: inherit;
+            background-color: white;
+        }
+
+        .eight {
+            height: 40px;
+            width: 100px;
+            color: rgb(160, 159, 159);
+            text-align: end;
+        }
+
+        .nine {
+            height: 40px;
+            width: 100px;
+            color: rgb(160, 159, 159);
+            text-align: end;
+        }
+
+        .ten {
+            height: 40px;
+            width: 100px;
+            color: rgb(160, 159, 159);
+            text-align: end;
+        }
+
+        .select {
+            border: none;
+        }
+
+        .eleven {
+            height: 40px;
+            width: 100px;
+            text-align: end;
+            color: rgb(160, 159, 159);
+        }
+
+        .twelve {
+            height: 40px;
+            width: 300px;
+            text-align: end;
+        }
+
+        .thirteen {
+            height: 600px;
+            background-image: url(https://www.avanse.com/blogs/images/Planning-to-study-abroad.jpg);
+            margin: 5px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        
+
+        .fifteen {
+            height: 100px;
+            width: 1000px;
+            color: rgb(145, 217, 194);
+            text-align: end;
+            position: absolute;
+            top: 100px;
+            /* background-color: blue; */
+        }
+
+        .sixteen {
+            background-color: bisque;
+            height: 150px;
+            width: 200px;
+            top: 520px;
+            left: 300px;
+            position: absolute;
+            /* background-color: aqua; */
+        }
+
+        .seventeen {
+            background-color: bisque;
+            height: 150px;
+            width: 200px;
+            left: 600px;
+            top: 520px;
+            position: absolute;
+        }
+
+        .eighteen {
+            background-color: bisque;
+            height: 150px;
+            width: 200px;
+            top: 520px;
+            left: 900px;
+            position: absolute;
+        }
+
+        .nineteen {
+            height: 30px;
+            width: inherit;
+            text-align: center;
+            font-size: larger;
+            margin-top: 10px;
+        }
+
+        .twenty {
+            height: 20px;
+            text-align: center;
+        }
+
+        .tw1 {
+            height: 90px;
+            text-align: center;
+        }
+
+        .tw2 {
+            height: 30px;
+            text-align: center;
+            font-size: larger;
+            margin-top: 10px;
+        }
+
+        .tw3 {
+            height: 20px;
+            text-align: center;
+        }
+
+        .tw4 {
+            height: 90px;
+            text-align: center;
+        }
+
+        .tw5 {
+            height: 30px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: larger;
+        }
+
+        .tw6 {
+            height: 20px;
+            text-align: center;
+        }
+
+        .tw7 {
+            height: 90px;
+            text-align: center;
+        }
+        input{
+            background-image: url(data:image/png;base64,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);
+            background-position: right;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="two">
+            <div class="three"><i class="fa-solid fa-phone"></i>+91 9873482502</div>
+            <div class="four"><i class="fa-regular fa-envelope"></i>abc@gmail.com</div>
+            <div class="five">Apply Now</div>
+        </div>
+        <div class="six">
+            <div class="seven">
+                <h2><i class="fa-solid fa-brain"></i>Mastery</h2>
+            </div>
+            <div class="eight">Home</div>
+            <div class="nine">About</div>
+            <div class="ten"><select name="" id="">
+                    <option value="">Pages</option>
+                </select></div>
+            <div class="eleven">Contact</div>
+            <div class="twelve"><input type="text" placeholder="Search here"></div>
+        </div>
+        <div class="thirteen">
+            <div class="fifteen">
+                <h1>All Knowledge is Ultimately,<br> Self Knowledge!!!</h1>
+            </div>
+            <div class="sixteen">
+                <div class="nineteen"><i class="fa-solid fa-computer"></i></div>
+                <div class="twenty">
+                    <h5>Learn Courses Online</h5>
+                </div>
+                <div class="tw1">Don't miss the fascinating opportunity to learn online in your comfort space!!!</div>
+            </div>
+            <div class="seventeen">
+                <div class="tw2"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <div class="tw3">
+                    <h5>High Qualified Teachers</h5>
+                </div>
+                <div class="tw4">There are undoubtebly excellent tutors.So,you need not worry at all!!!</div>
+            </div>
+            <div class="eighteen">
+                <div class="tw5"><i class="fa-solid fa-book"></i></div>
+                <div class="tw6">
+                    <h5>Book,Library and Stores</h5>
+                </div>
+                <div class="tw7">Students shall be accomodated with sufficient stationary+knowledge!!!</div>
+            </div>
+        </div>
+   
+</body>
+
+</html>

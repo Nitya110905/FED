@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+    <style>
+        .one{
+            display: inline-grid;
+            /* grid-template-columns: auto auto auto; */
+            gap: 2px 2px;
+        }
+        .two{
+            border: 2px solid black;
+            padding: 30px;
+            
+        }
+        #i1{
+            grid-row: 1/4;
+        }
+        #i2{
+            grid-column: 2/4;
+        }
+        #i6{
+            grid-row: 2/4;
+            grid-column-start: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two" id="i1">1</div>
+        <div class="two" id="i2">2</div>
+        <div class="two" id="i3">3</div>
+        <div class="two" id="i4">4</div>
+        <div class="two" id="i5">5</div>
+        <div class="two" id="i6">6</div>
+        <div class="two" id="i7">7</div>
+        <div class="two" id="i8">8</div>
+    </div>
+</body>
+</html>

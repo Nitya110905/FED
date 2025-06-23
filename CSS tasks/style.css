@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 1000px;
+    background-color: #e0d4bd;
+    width: 100%;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: yellow;
+}
+
+.nav1#i1 {
+    height: inherit;
+    width: 20%;
+    text-align: center;
+    background-color: red;
+}
