@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- there are 3 popup boxes
+        1.alert
+        2.confirm
+        3.prompt
+     -->
+    <button onclick="one()">Click Here</button>
+    <div id="one"></div>
+    <script>
+
+        function one() {
+            alert("Hiiiiii")
+            var txt
+            if (confirm("Hiii How Are You")) {
+                txt="I'm Good"
+            } else {
+                txt="I'm not Good"
+            }
+            document.getElementById("one").innerHTML=txt
+            // var txt
+            // var per = prompt("Enter Your Name")
+            // if (per == "" || per == null) {
+            //     txt = "plz enter your name"
+            // } else {
+            //     txt="HIIII "+per+" How are you"
+            // }
+            // document.getElementById("one").innerHTML = txt
+        }
+    </script>
+</body>
+
+</html>
