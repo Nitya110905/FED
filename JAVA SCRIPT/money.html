@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><b>MONEY TABLE</b></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td>2000 X</td>
+            <td><input type="number" id="n1" onkeyup="one()" min="0"></td>
+            <td id="r1">0</td>
+        </tr>
+        <tr>
+            <td>500 X</td>
+            <td><input type="number" id="n2" onkeyup="one()" min="0"></td>
+            <td id="r2">0</td>
+        </tr>
+        <tr>
+            <td>200 X</td>
+            <td><input type="number" id="n3" onkeyup="one()" min="0"></td>
+            <td id="r3">0</td>
+        </tr>
+        <tr>
+            <td>100 X</td>
+            <td><input type="number" id="n4" onkeyup="one()" min="0"></td>
+            <td id="r4">0</td>
+        </tr>
+        <tr>
+            <td>50 X</td>
+            <td><input type="number" id="n5" onkeyup="one()" min="0"></td>
+            <td id="r5">0</td>
+        </tr>
+        <tr>
+            <td>20 X</td>
+            <td><input type="number" id="n6" onkeyup="one()" min="0"></td>
+            <td id="r6">0</td>
+        </tr>
+        <tr>
+            <td>10 X</td>
+            <td><input type="number" id="n7" onkeyup="one()" min="0"></td>
+            <td id="r7">0</td>
+        </tr>
+        <tr>
+            <td>total=</td>
+            <td></td>
+            <td id="rt">0</td>
+        </tr>
+    </table>
+    <script>
+        function one() {
+            n1 = document.getElementById("n1").value
+            r1 = document.getElementById("r1").innerHTML = 2000 * n1
+            n2 = document.getElementById("n2").value
+            r2 = document.getElementById("r2").innerHTML = 500 * n2
+            n3 = document.getElementById("n3").value
+            r3 = document.getElementById("r3").innerHTML = 200 * n3
+            n4 = document.getElementById("n4").value
+            r4 = document.getElementById("r4").innerHTML = 100 * n4
+            n5 = document.getElementById("n5").value
+            r5 = document.getElementById("r5").innerHTML = 50 * n5
+            n6 = document.getElementById("n6").value
+            r6 = document.getElementById("r6").innerHTML = 20 * n6
+            n7 = document.getElementById("n7").value
+            r7 = document.getElementById("r7").innerHTML = 10 * n7
+            rt = document.getElementById("rt").innerHTML = r1+r2+r3+r4+r5+r6+r7
+        }
+    </script>
+
+</body>
+
+</html>
