@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="counter"></div>
+    <button onclick="two()">DEC</button>
+    <button onclick="one()">INC</button>
+    <button onclick="three()">clr</button>
+    <script>
+        count = 0
+        document.getElementById("counter").innerHTML = `<h1>${count}</h1>`
+        function one() {
+            count++
+            document.getElementById("counter").innerHTML = `<h1>${count}</h1>`
+
+        }
+        function two() {
+            if (count > 0) {
+                count--
+                document.getElementById("counter").innerHTML = `<h1>${count}</h1>`
+
+            }
+        }
+        function three() {
+            count =0
+            document.getElementById("counter").innerHTML = `<h1>${count}</h1>`
+
+        }
+    </script>
+</body>
+
+</html>
