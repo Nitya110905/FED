@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="return finalCheck()">
+        <table border="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" onblur="validData(this,'nameerror')"
+                        onkeydown="Namevalid(this,'nerror')">
+                    <span id="nameerror"></span>
+                    <span id="nerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" onblur="validData(this,'emailerror')"
+                        onkeydown="Emailvalid(this,'eerror')">
+                    <span id="emailerror"></span>
+                    <span id="eerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pass" onblur="validData(this,'passerror')"
+                        onkeydown="Passvalid(this,'perror')">
+                    <span id="passerror"></span>
+                    <span id="perror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile No.:</td>
+                <td><input type="number" name="mob" onblur="validData(this,'moberror')"
+                        onkeydown="Mobvalid(this,'merror')">
+                    <span id="moberror"></span>
+                    <span id="merror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function validData(input, msg) {
+            if (input.value == "") {
+                document.getElementById(msg).style.color = "red"
+                document.getElementById(msg).innerText = "Kindly enter valid data"
+                return false;
+            }
+            else {
+                document.getElementById(msg).innerText = ""
+            }
+        }
+        function Namevalid(input, msg) {
+            var name = /^[ a-zA-Z] /
+            if (name.test(input.value)) {
+                document.getElementById(msg).innertext = "";
+                return true;
+            }
+            else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "Please enter valid name";
+                return false;
+            }
+        }
+        function Emailvalid(input, msg) {
+            var email = /^([a-z0-9.-])+@+([a-z0-9-._]).([a-z]{3})/
+            if (email.test(input.value)) {
+                document.getElementById(msg).innertext = "";
+                return true;
+            }
+            else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "Please enter valid Email";
+                return false;
+            }
+        }
+        function Passvalid(input, msg) {
+            var pass = /^[a-zA-Z0-9.-]{3,5}$/
+            if (pass.test(input.value)) {
+                document.getElementById(msg).style.color = "red";
+                return true;
+            }
+            else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "Please enter a valid password of 3-5 characters";
+                return false;
+            }
+        }
+        function Mobvalid(input, msg) {
+            var mob = /^[0-9]{10}/
+            if (mob.test(input.value)) {
+                document.getElementById(msg).innerText = "";
+                return true;
+            }
+            else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "Please enter valid No.";
+                return false;
+            }
+        }
+
+        function finalCheck() {
+    let isNameValid = validData(document.getElementsByName("name")[0], "nameerror") &&
+                      Namevalid(document.getElementsByName("name")[0], "nerror");
+
+    let isEmailValid = validData(document.getElementsByName("email")[0], "emailerror") &&
+                       Emailvalid(document.getElementsByName("email")[0], "eerror");
+
+    let isPassValid = validData(document.getElementsByName("pass")[0], "passerror") &&
+                      Passvalid(document.getElementsByName("pass")[0], "perror");
+
+    let isMobValid = validData(document.getElementsByName("mob")[0], "moberror") &&
+                     Mobvalid(document.getElementsByName("mob")[0], "merror");
+
+    return isNameValid && isEmailValid && isPassValid && isMobValid;
+}
+// document.getElementsByName("name")[0]
+// Grabs the <input> element by its name attribute.
+
+// The [0] is necessary since getElementsByName() returns a NodeList, even if there’s only one item.
+
+// validData(...)
+// Ensures the field isn’t empty.
+
+// Namevalid(...) (and others)
+// Applies specific pattern matching using Regex for that field type.
+
+    </script>
+</body>
+
+</html>
