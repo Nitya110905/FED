@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            height: 200px;
+            width: 400px;
+            background-image: url(https://img.freepik.com/premium-photo/cute-puppy-sitting-looking-camera-playing-with-fluffy-toy-generated-by-artificial-intelligence_188544-65504.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: none;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="one"></div>
+    <button onclick="one()">Show</button>
+    <button onclick="two()">Hide</button>
+    <script>
+        function one() {
+            document.getElementById("one").style.display="block"
+        }
+        function two() {
+            document.getElementById("one").style.display="none"
+        }
+    </script>
+</body>
+</html>
