@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div{
+            height: 500px;
+            background-color: aqua;
+            width: 100%;
+            display: none;
+        }
+        .one{
+            position: fixed;
+            /* margin-left: 10px; */
+            top: 600px;
+        }
+        .two{
+            position: fixed;
+            left: 50px;
+            top: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button class="one">xyz</button>
+    <button class="two">stop</button>
+    <script>
+        $(document).ready(function () {
+            $(".one").click(function () {
+                $("div").slideUp()
+                $("div").slideDown()
+                $("div").slideToggle(3000)                
+            })
+            $(".two").click(function () {
+                $(".two").click(function () {
+                    $("div").stop()  
+                })
+            })
+        })
+    </script>
+</body>
+</html>
